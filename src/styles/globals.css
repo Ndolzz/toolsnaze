@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg: theme("colors.surface.light");
+  --bg-raised: theme("colors.surface.light-raised");
+  --fg: theme("colors.ink.900");
+  --fg-muted: theme("colors.ink.600");
+  --border: theme("colors.ink.100");
+}
+
+.dark {
+  color-scheme: dark;
+  --bg: theme("colors.surface.dark");
+  --bg-raised: theme("colors.surface.dark-raised");
+  --fg: theme("colors.ink.0");
+  --fg-muted: theme("colors.ink.400");
+  --border: rgba(247, 248, 252, 0.1);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+/* Focus state — wajib terlihat, tidak boleh dihilangkan (Phase 19: Accessibility) */
+:focus-visible {
+  outline: none;
+  box-shadow: theme("boxShadow.focus");
+  border-radius: theme("borderRadius.sm");
+}
+
+/* Phase 11 & 19: hormati prefers-reduced-motion secara global */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
