@@ -96,6 +96,7 @@ export const TOOLS: Tool[] = [
     description: "Perkecil ukuran file gambar tanpa merusak kualitas.",
     category: "image",
     keywords: ["kompres gambar", "perkecil ukuran", "compress image"],
+    href: "/tools/image-compressor",
   },
   {
     slug: "image-resizer",
@@ -103,6 +104,7 @@ export const TOOLS: Tool[] = [
     description: "Ubah dimensi gambar sesuai kebutuhan.",
     category: "image",
     keywords: ["resize", "ubah ukuran gambar"],
+    href: "/tools/image-resizer",
   },
   {
     slug: "image-converter",
@@ -110,6 +112,31 @@ export const TOOLS: Tool[] = [
     description: "Konversi gambar antar format JPG, PNG, WEBP, dan AVIF.",
     category: "image",
     keywords: ["jpg", "png", "webp", "avif", "convert image", "konversi gambar"],
+    href: "/tools/image-converter",
+  },
+  {
+    slug: "image-cropper",
+    name: "Image Cropper",
+    description: "Potong bagian gambar yang tidak diperlukan.",
+    category: "image",
+    keywords: ["crop", "potong gambar"],
+    href: "/tools/image-cropper",
+  },
+  {
+    slug: "image-optimizer",
+    name: "Image Optimizer",
+    description: "Optimalkan gambar otomatis satu klik — format & kualitas dipilihkan.",
+    category: "image",
+    keywords: ["optimize", "optimalkan gambar"],
+    href: "/tools/image-optimizer",
+  },
+  {
+    slug: "image-metadata",
+    name: "Image Metadata",
+    description: "Lihat dimensi, rasio aspek, dan info lain dari sebuah gambar.",
+    category: "image",
+    keywords: ["metadata gambar", "info gambar", "dimensi"],
+    href: "/tools/image-metadata",
   },
   {
     slug: "background-remover",

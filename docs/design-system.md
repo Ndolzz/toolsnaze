@@ -41,7 +41,8 @@ merujuk token (`rounded-md`, `shadow-sm`, `duration-fast`, dst).
 - [x] Phase 2 — opening/splash experience (`src/components/splash-screen.tsx`)
 - [x] Phase 3 — home / tool discovery (`app/page.tsx`, search + filter kategori + favorite)
 - [x] Phase 4 — social video: provider abstraction + Social Video Downloader, Video Metadata, Thumbnail Extractor
-- [ ] Phase 5+ — kategori tools lainnya
+- [x] Phase 5 — image tools: Compressor, Resizer, Converter, Cropper, Optimizer, Metadata (semua client-side)
+- [ ] Phase 6+ — kategori tools lainnya
 
 ## Cara menjalankan
 ```bash
